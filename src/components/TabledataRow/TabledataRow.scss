@@ -1,0 +1,17 @@
+.tabledataRow-button{
+  width: 60px;
+  background-color: #00A7E8;
+  border: 1px solid #00A7E8;
+  color: #fff;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  &:active, &:focus{
+    outline: none;
+  }
+  &:hover{
+    color: #00A7E8;
+    background: #fff;
+    transition: all 0.5s;
+  }
+}

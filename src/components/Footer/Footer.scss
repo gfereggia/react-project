@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../assets/Fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url('../../assets/Fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.footer-container{
+  height: 500px;
+  background: url("../../assets/Backgrounds/Bg_Footer@2x.png");
+  margin-top: -7%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  position: relative;
+}
+
+.footer-text{
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 2%;
+  text-align: center;
+  font-family: Montserrat SemiBold;
+}
+
+.footer-primary{
+  font-size: 2.7rem;
+}
+
+.footer-secondary{
+  font-size: 2rem;
+}
+
+.footer-button{
+  width: 23%;
+  padding: 15px 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  border: 1px solid #00a7e8;
+  background-color: #00a7e8;
+  font-family: Montserrat SemiBold;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+  }
+  &:active, &:focus {
+    outline: none;
+  }
+  &:hover{
+    background-color: #fff;
+    transition: all 1s;
+    a{
+      color: #00a7e8;
+      transition: all 1s;
+    }
+  }
+}
+
+.footer-brand{
+  width: 120px;
+  position: absolute;
+  bottom: 10%;
+  left: 46%;
+  text-align: center;
+  svg{
+    width: 100px;
+  }
+}
+
+.primary{
+  color: #00a7e8;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-brand{
+    left: 44.5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container{
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    .footer-text{
+      width: 100%;
+      .footer-primary{
+        font-size: 1.8rem;
+        text-align: center;
+      }
+      .footer-secondary{
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      .footer-button{
+        margin-top: 0;
+        width: auto;
+        padding: 10px 10px;
+      }
+    }
+  }
+  .footer-brand{
+    width: auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+}

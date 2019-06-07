@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url('../../assets/Fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.product-preview__container{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 90%;
+  display: flex;
+}
+
+.product-preview__img {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.product-preview__list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.product-preview__item {
+  font-family: Montserrat SemiBold;
+  font-size: 1rem;
+  list-style: none;
+  color: #fff;
+}
+
+@media only screen and (max-width: 760px) {
+  .product-preview__container {
+    flex-direction: column;
+  }
+  .product-preview__img{
+    margin-top: 0;
+    margin-left: 10%;
+  }
+  .product-preview__list{
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .product-preview__img{
+    margin-top: 2%;
+    margin-left: 7%;
+  }
+  .product-preview__list{
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .product-preview__img{
+    margin-top: 2%;
+    margin-left: 0%;
+  }
+  .product-preview__list{
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+}

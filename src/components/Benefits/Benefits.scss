@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../assets/Fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../../assets/Fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Semi Bold';
+  src: url('../../assets/Fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../../assets/Fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.benefits-container {
+  height: 400px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 8px 2px -4px #ddd;
+
+}
+
+.benefits__text {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-family: Montserrat Regular;
+  font-size: 0.9rem;
+  text-align: center;
+  .primary {
+    color: #00A7E8;
+  }
+}
+
+.benefits-image-box{
+  width: 145px;
+  text-align: center;
+}
+
+.benefits-images{
+  height: 150px;
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefits-image-text{
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .benefits-images{
+    width: 95%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .benefits-container {
+    height: auto;
+  }
+
+  .benefits-images{
+    height: auto;
+    flex-direction: column;
+  }
+
+  .benefits-image-box{
+    width: auto;
+  }
+
+  .benefits__text{
+    font-size: 0.7rem;
+    margin-top: 0;
+  }
+
+  .benefits-images{
+    height: auto;
+  }
+}

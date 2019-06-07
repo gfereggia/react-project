@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url('../../assets/Fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.toolbar {
+  position: absolute;
+  width: 85%;
+  top: 5%;
+  left: 7.5%;
+  height: 65px;
+}
+
+.toolbar__navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.toolbar__logo {
+  margin-left: 0.5rem;
+  a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar__navigation-items {
+  font-family: Montserrat SemiBold;
+  margin-right: 1rem;
+  font-size: 1rem;
+  display: flex;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    padding: 0 2rem;
+    cursor: pointer;
+    a {
+      color: #000;
+      text-decoration: none;
+      &:hover,
+      &:active {
+        color: #9FC739
+      }
+    }
+  }
+}
+
+.toolbar__button {
+  width: 130px;
+  margin-left: 10px;
+  padding: 7px 0;
+  border-radius: 15px;
+  border: 1px solid #00A7E8;
+  background-color: #FFF;
+  position: relative;
+  bottom: 7px;
+  color: #00a7e8;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #00A7E8;
+    color: #FFF;
+    transition: all 0.5s;
+    a{
+      color: #FFF;
+    }
+  }
+  &:active, &:focus {
+    outline: none;
+  }
+  a {
+    text-decoration: none;
+    color: #00A7E8;
+    &:hover,
+    &:active {
+      color: #FFF !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .toolbar{
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar{
+    width: 90%;
+  }
+  .toolbar__navigation-items {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .toolbar__toggle-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .toolbar__navigation {
+    width: 100%;
+  }
+}
+
